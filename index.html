@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/react_phone-catalog/assets/index-BOUX-8xO.js"></script>
-    <link rel="stylesheet" crossorigin href="/react_phone-catalog/assets/index-D5sxXASW.css">
+    <title>Phone Catalog</title>
+    <link rel="icon" type="image/svg+xml" href="/react_phone-catalog/assets/category-accessories-DNhrpqoN.webp" />
+    <script>
+      (function () {
+        const redirect = new URLSearchParams(window.location.search).get('redirect');
+        if (redirect) {
+          const url = '/' + redirect;
+          window.history.replaceState(null, '', '/react_phone-catalog/' + redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/react_phone-catalog/assets/index-B3jFz4SZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/react_phone-catalog/assets/index-Da3l-hfG.css">
   </head>
   <body>
     <div id="root"></div>
